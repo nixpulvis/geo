@@ -2,7 +2,16 @@
 
 ## Unreleased
 
+* Fix `Centroid` algorithm for `MultiLineString` when all members have only one
+  point.
+  * <https://github.com/georust/geo/pull/629>
+* Implement `Centroid` algorithm on `Geometry` and its remaining variants.
+  * <https://github.com/georust/geo/pull/629>
+
+## 0.17.1
+
 * Add `GeodesicIntermediate` algorithm
+  * <https://github.com/georust/geo/pull/608>
 
 ## 0.17.0
 
