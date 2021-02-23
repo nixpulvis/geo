@@ -1,2 +1,13 @@
 [workspace]
 members = ["geo", "geo-types", "geo-postgis"]
+
+[patch.crates-io]
+
+# Ensure any transitive dependencies also use the local geo/geo-types
+geo = { path = "geo" }
+geo-types = { path = "geo-types" }
+
+# TODO: released deserialization support
+wkt = { git = "https://github.com/georust/wkt" }
+# TODO: move to georust and release(?)
+jts-test-runner = { git = "https://github.com/michaelkirk/jts-test-runner", branch = "mkirk/mvp" }
